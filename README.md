@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 🖼️ Image Explorer
 
 **Live Demo:** 🌐 [https://itashwani.netlify.app](https://itashwani.netlify.app)
@@ -87,4 +87,4 @@ This project is open-source and available under the [MIT License](LICENSE).
 =======
 # Image-Explorer
 A responsive image search web app using Unsplash API, built with HTML, CSS, and JavaScript.
->>>>>>> c2d25c1e977436cb0789b5b5caf6675167f634e8
+
