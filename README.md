@@ -46,8 +46,7 @@ It’s built using **HTML, CSS, and JavaScript**, focusing on API integration, a
 
 ## 🚀 Project Demo
 
-🔗 **Live Site:** [https://itashwani.netlify.app](https://itashwani.netlify.app)  
-📸 **GitHub Repository:** *(add your repo link here once created)*  
+🔗 **Live Site:** [https://itashwani.netlify.app](https://itashwani.netlify.app)
 
 ---
 
