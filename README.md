@@ -79,11 +79,7 @@ Image-Explorer/
 
 💼 Front-End Developer | Student | Tech Enthusiast  
 
----
 
-## 📜 License
-
-This project is open-source and available under the [MIT License](LICENSE).
 =======
 # Image-Explorer
 A responsive image search web app using Unsplash API, built with HTML, CSS, and JavaScript.
