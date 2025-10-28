@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Image Explorer</title>
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/1/1a/Crystal_Project_computer.png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <div class="logo">
+          <img src="image1.JPG" alt="logo" style="width:40px;height:40px;border-radius:12px;">
+        </div>
+        <div>
+          <h1>Image Explorer</h1>
+          <p class="tag">Search • Discover • Save favorites</p>
+        </div>
+      </div>
+
+      <div class="controls">
+        <div class="search-glass">
+          <input id="search" type="search" placeholder="Try: mountains, cats, city..." />
+          <button id="search-btn" title="Search">Search</button>
+        </div>
+
+        <div class="action-buttons">
+          <button id="random-btn" class="ghost" title="Random images">Random</button>
+          <button id="fav-toggle" class="ghost" title="Show favorites">❤ <span id="fav-count">0</span></button>
+          <button id="theme-toggle" class="ghost" title="Toggle theme">🌙</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section id="grid" class="grid" aria-live="polite"></section>
+
+    <div id="loader" class="loader" hidden>
+      <div class="spinner"></div>
+      <div class="loader-text">Loading…</div>
+    </div>
+
+    <div id="end-msg" class="end-msg" hidden>No more results.</div>
+  </main>
+
+  <aside id="favorites-panel" class="favorites-panel hidden" aria-hidden="true">
+    <div class="fav-head">
+      <h3>Favorites</h3>
+      <div>
+        <button id="close-favs" class="ghost">Close</button>
+        <button id="clear-favs" class="ghost">Clear All</button>
+      </div>
+    </div>
+    <div id="fav-list" class="fav-list"></div>
+    <div class="fav-empty" id="fav-empty">No favorites yet.</div>
+  </aside>
+
+  <footer class="footer">
+    <div>Built with Unsplash API • Keep your key private for production</div>
+    <div class="small">Tip: Click an image to preview & download</div>
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true">
+      <button id="modal-close" class="modal-close" aria-label="Close modal">&times;</button>
+      <div class="modal-body">
+        <img id="modal-img" alt="Preview" />
+        <div class="meta">
+          <div>
+            <div id="modal-author" class="author"></div>
+            <div id="modal-desc" class="desc"></div>
+          </div>
+          <div class="modal-actions">
+            <a id="download-btn" class="btn primary" target="_blank" rel="noopener">Download</a>
+            <a id="unsplash-link" class="btn ghost" target="_blank" rel="noopener">Open Unsplash</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
